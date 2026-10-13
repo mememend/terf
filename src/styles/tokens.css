@@ -1,0 +1,53 @@
+/* language: CSS, file: frontend/src/styles/tokens.css
+   Дизайн-токены сняты с референсов: чёрный фон, белые карточки, скругления, зелёный акцент. */
+
+:root {
+  --bg: #000000;
+  --bg-elevated: #0d0d0f;
+
+  --surface: #141416;
+  --surface-2: #1c1c1e;
+  --surface-3: #242427;
+  --surface-pressed: #2c2c30;
+
+  --card: #ffffff;
+  --card-soft: #f5f5f7;
+  --card-line: #e6e6ea;
+
+  --text: #ffffff;
+  --text-dim: #8e8e93;
+  --text-faint: #636366;
+  --text-on-card: #0a0a0a;
+  --text-on-card-dim: #8a8a8f;
+
+  --green: #22c55e;
+  --green-deep: #16a34a;
+  --gold: #f0b90b;
+  --blue: #38bdf8;
+  --violet: #a855f7;
+  --danger: #ef4444;
+
+  --radius-xl: 30px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  --gap: 12px;
+  --pad-screen: 16px;
+
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.55);
+  --shadow-modal: 0 -12px 60px rgba(0, 0, 0, 0.7);
+
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI',
+    'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-num: 'SF Mono', 'Roboto Mono', ui-monospace, 'Menlo', monospace;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --dur-fast: 180ms;
+  --dur: 380ms;
+  --dur-slow: 760ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
