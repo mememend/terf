@@ -1,0 +1,20 @@
+{
+  "name": "@ciferki/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Игровое ядро Циферок: конфиг, анализатор узоров, генератор номеров, движок",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "simulate": "esbuild tools/simulate.ts --bundle --platform=node --format=esm --outfile=tools/.simulate.mjs --log-level=warning && node tools/.simulate.mjs",
+    "selftest": "esbuild tools/selftest.ts --bundle --platform=node --format=esm --outfile=tools/.selftest.mjs --log-level=warning && node tools/.selftest.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}

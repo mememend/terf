@@ -1,0 +1,28 @@
+{
+  "name": "ciferki",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Циферки — Telegram Mini App: выпуск игровых SIM-карт, коллекция номеров",
+  "workspaces": [
+    "shared",
+    "frontend",
+    "backend",
+    "bot"
+  ],
+  "scripts": {
+    "dev": "npm --workspace frontend run dev",
+    "dev:api": "npm --workspace backend run dev",
+    "dev:bot": "npm --workspace bot run dev",
+    "build": "npm --workspace frontend run build",
+    "preview": "npm --workspace frontend run preview",
+    "typecheck": "npm --workspace shared run typecheck && npm --workspace frontend run typecheck && npm --workspace backend run typecheck && npm --workspace bot run typecheck",
+    "selftest": "npm --workspace shared run selftest && npm --workspace frontend run selftest && npm --workspace bot run selftest",
+    "smoke": "npm --workspace backend run smoke",
+    "test:pg": "npm --workspace backend run pgtest",
+    "start:api": "npm --workspace backend run start",
+    "start:bot": "npm --workspace bot run start"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bot",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --enable-source-maps scripts/dev.mjs",
+    "start": "node dist/bot.mjs",
+    "build": "node scripts/build.mjs",
+    "selftest": "node scripts/selftest.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.6.3"
+  }
+}
